@@ -5,5 +5,5 @@
                 {{session()->get($msg)}}
             </p>
         </div>
-        @endif
-    @endforeach
+    @endif
+@endforeach
