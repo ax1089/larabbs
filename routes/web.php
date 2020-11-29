@@ -45,6 +45,55 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 //个人页面路由
 Route::resource('users','UsersController',['only'=>['show','update','edit']]);
 
+//首页分类列表
+Route::resource('categories','CategoriesController',['only'=>['show']]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
