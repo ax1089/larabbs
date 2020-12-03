@@ -18,4 +18,8 @@ class TopicObserver
     {
         //
     }
+
+    public function saving(Topic $topic){
+        $topic->except = make_except($topic->body);
+    }
 }
