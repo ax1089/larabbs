@@ -49,6 +49,10 @@ Route::resource('users','UsersController',['only'=>['show','update','edit']]);
 Route::resource('categories','CategoriesController',['only'=>['show']]);
 
 
+//编辑器图片上传
+Route::post('upload_image','TopicsController@uploadImage')->name('topics.upload_image');
+
+
 
 
 
