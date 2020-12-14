@@ -43,7 +43,7 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 
 
 //个人页面路由
-Route::resource('users','UsersController',['only'=>['show','update','edit']]);
+Route::resource('users','UsersController',['only'=>['show','update','edit','reply_list']]);
 
 //首页分类列表
 Route::resource('categories','CategoriesController',['only'=>['show']]);
@@ -57,6 +57,9 @@ Route::resource('topics', 'TopicsController', ['only' => ['index','create', 'sto
 
 //SEO 优化URL
 Route::get('topics/{topic}/{slug?}','TopicsController@show')->name('topics.show');
+
+//帖子的回复
+//Route::resource('replies','RepliesController',['only'=>['index','create','destroy']]);
 
 
 

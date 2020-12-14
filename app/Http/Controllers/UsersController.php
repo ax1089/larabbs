@@ -15,6 +15,7 @@ class UsersController extends Controller
 
     //
     public function show(User $user){
+//        dd($user->replies());
         return view('users.show',compact('user'));
     }
 

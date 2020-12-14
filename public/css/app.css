@@ -17609,3 +17609,12 @@ body {
   line-height: 38px;
 }
 
+.top-reply a {
+  color: inherit;
+}
+
+.top-reply .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+

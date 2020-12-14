@@ -8,7 +8,7 @@ class Reply extends Model
 
 
     public function topic(){
-        $this->belongsTo(Topic::class);
+        return $this->belongsTo(Topic::class);
     }
 
     public function user(){
