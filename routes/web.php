@@ -59,7 +59,7 @@ Route::resource('topics', 'TopicsController', ['only' => ['index','create', 'sto
 Route::get('topics/{topic}/{slug?}','TopicsController@show')->name('topics.show');
 
 //帖子的回复
-//Route::resource('replies','RepliesController',['only'=>['index','create','destroy']]);
+Route::resource('replies','RepliesController',['only'=>['store','destroy']]);
 
 
 
