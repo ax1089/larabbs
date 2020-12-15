@@ -17618,3 +17618,16 @@ body {
   color: #b3b3b3;
 }
 
+.notification-badge .badge {
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.notification-badge .badge-secondary {
+  background-color: #e8e8e8;
+}
+
+.notification-badge .badge-hint {
+  background-color: #d15b47 !important;
+}
+
