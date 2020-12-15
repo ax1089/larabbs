@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba4bcd9-026c-4899-97a2-cae24ff6870c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/notifications/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/notifications/types/_topic_replied.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/TopicReplied.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/TopicReplied.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -69,6 +61,27 @@
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Notifications/TopicReplied.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+              <folding>
+                <element signature="e#37#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="677">
+              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -111,27 +124,6 @@
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#li#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Observers/TopicObserver.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-              <folding>
-                <element signature="e#33#71#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="64" column="74" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -192,7 +184,6 @@
         <option value="$PROJECT_DIR$/app/Models/Topic.php" />
         <option value="$PROJECT_DIR$/resources/views/users/_topics.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Observers/TopicObserver.php" />
         <option value="$PROJECT_DIR$/app/Jobs/TranslateSlug.php" />
         <option value="$PROJECT_DIR$/database/factories/ReplyFactory.php" />
@@ -209,7 +200,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_12_14_212905_add_notification_count_to_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/users/_replies.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" />
-        <option value="$PROJECT_DIR$/app/Notifications/TopicReplied.php" />
         <option value="$PROJECT_DIR$/app/Observers/ReplyObserver.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
@@ -219,6 +209,8 @@
         <option value="$PROJECT_DIR$/resources/views/notifications/types/_topic_replied.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NotificationsController.php" />
+        <option value="$PROJECT_DIR$/app/Notifications/TopicReplied.php" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -346,9 +338,9 @@
       <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="528" />
-    <option name="y" value="547" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="698" />
+    <option name="y" value="66" />
     <option name="width" value="1792" />
     <option name="height" value="961" />
   </component>
@@ -365,24 +357,6 @@
             <path>
               <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -471,12 +445,12 @@
       <workItem from="1607525107117" duration="1227000" />
       <workItem from="1607912411238" duration="12938000" />
       <workItem from="1607952093979" duration="7890000" />
-      <workItem from="1608005402879" duration="4292000" />
+      <workItem from="1608005402879" duration="4946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99507000" />
+    <option name="totallyTimeSpent" value="100161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,7 +462,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="528" y="547" width="1792" height="961" extended-state="0" />
+    <frame x="698" y="66" width="1792" height="961" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994664" visible="true" weight="0.172" />
@@ -643,13 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -819,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Notifications/TopicReplied.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#37#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/users/_replies.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -932,6 +889,23 @@
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Notifications/TopicReplied.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <folding>
+            <element signature="e#37#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
         </state>
       </provider>
     </entry>
